@@ -8,7 +8,7 @@ Authors@R: person("Arie", "Spirgel", email = "spirgel@gmail.com",
 Maintainer: Arie Spirgel <spirgel@gmail.com>
 Description: Prepares and writes files to submit to the National Student Clearinghouse's 
   StudentTracker service (http://www.studentclearinghouse.org/colleges/studenttracker/).
-    dplyr,
+Imports: dplyr,
     lubridate,
     stringr
 License: MIT + file LICENSE

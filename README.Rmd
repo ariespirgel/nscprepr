@@ -1,9 +1,14 @@
-# nscprepr
+---
+title: "nscprepr"
+output:
+  html_document:
+    keep_md: yes
+---
 
 This package contains one function - `nsc_prep` - which prepares and writes a file that is ready for submission to the National Student Clearinghouse.
 
+```{r}
 
-```r
 library(nscprepr)
 
 # create a data frame
@@ -22,18 +27,7 @@ df <- data.frame(first = c("Ruth", "William", "Sandra"),
 nsc_prep(data = df, institution_code = "001509", branch_code = "00",
                 institution_name = "Nova Southeastern University",
                 inquiry_type = "SE") 
-```
 
-```
-## # A tibble: 5 × 12
-##   record_type    ssn   first                       middle     last suffix
-##         <chr>  <chr>   <chr>                        <chr>    <chr>  <chr>
-## 1          H1 001509      00 Nova Southeastern University 20170612     SE
-## 2          D1           Ruth                            B Ginsburg       
-## 3          D1        William                            J  Brennan    Jr.
-## 4          D1         Sandra                            D O'Connor       
-## 5          T1      5                                                     
-## # ... with 6 more variables: dob <chr>, search_date <chr>, blank_1 <chr>,
-## #   institution_code <chr>, branch_code <chr>, id <chr>
+
 ```
 

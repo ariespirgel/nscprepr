@@ -14,3 +14,4 @@ Description: Prepares and writes files to submit to the National Student Clearin
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/spirgel/nscprepr

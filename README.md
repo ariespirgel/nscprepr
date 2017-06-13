@@ -2,7 +2,7 @@
 
 This package contains one function - `nsc_prep` - which prepares and writes a file that is ready for submission to the National Student Clearinghouse's StudentTracker service. 
 
-Begin with a data frame containing (at minimum) the columns in the example `df` below and executing the `nsc_prep` function (substituting your institution's information and desired search type). For more information on search dates and inquiry types, please visit http://www.studentclearinghouse.org/colleges/files/ST_ExcelInstructions.pdf.
+Begin with a data frame containing (at minimum) the columns in the example `df` below and executing the `nsc_prep` function (substituting your institution's information and desired search type). For more details on the columns (and what they mean) required by the StudentTracker service, please visit <http://www.studentclearinghouse.org/colleges/files/ST_ExcelInstructions.pdf>
 
 You can install the package from CRAN:
 

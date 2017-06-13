@@ -1,7 +1,7 @@
 Package: nscprepr
 Type: Package
 Title: Prepares and Writes Files to Submit to the National Student Clearinghouse
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Arie", "Spirgel", email = "spirgel@gmail.com",
   role = c("aut", "cre"))
 Date: 2017-06-08

@@ -11,7 +11,7 @@ install.packages("nscprepr")
 
 ```
 
-The chunk below creates an example data frame. Notice that requirements of the Clearinghouse can be violated and the function will resolve the issues (e.g., single digit days can be one or two digits,  youcan include the full middle name as opposed to just the single character).
+The chunk below creates an example data frame. Notice that it is OK to violate some Clearinghouse requirements in your data frame because `nsc_prep()` will eventually resolve the issues (e.g., single digit days can be one (e.g., `3`) or two (e.g., `03`) digits,  you can include the full middle name as opposed to just a single character for the middle initial).
 
 ```r
 

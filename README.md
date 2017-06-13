@@ -11,14 +11,10 @@ install.packages("nscprepr")
 
 ```
 
-Begin with a data frame:
+Begin with a data frame, noticing how single digit months and days can be included as one digit (e.g., `3`) or two (e.g., `03`).
 
 ```r
-library(nscprepr)
 
-# create example data frame
-# notice how single digit months and days can be included as one digut (e.g., `3`) 
-# or two (e.g., `03`)
 df <- data.frame(first = c("Ruth", "William", "Sandra"),
              middle = c("Bader", "J.", "D"),
              last = c("Ginsburg", "Brennan", "O'Connor"),
@@ -28,13 +24,14 @@ df <- data.frame(first = c("Ruth", "William", "Sandra"),
              search_date = c("1/1/1952", "6/01/1930", "8/5/1971"))
 
 ```
-Run `nsc_prep()`:
+
+The `nsc_prep()` functions prepares and writes a file to the working directory that is ready for submission to the National Student Clearinghouse's StudentTracker service;  the file that is written will be ready to upload to the Clearinghouse (e.g., it will not
+include the column names that are printed in the data frame below).
 
 ```r
-# nsc_prep() prepares and writes a file to the working directory that is ready for 
-# submission to the National Student Clearinghouse's StudentTracker service. The file 
-# that is written will be ready to upload to the Clearinghouse (e.g., it will not 
-# include the column names that are printed in the data frame below).
+library(nscprepr)
+
+# substitute your institution's information
 nsc_prep(data = df, institution_code = "001509", branch_code = "00",
                 institution_name = "Nova Southeastern University",
                 inquiry_type = "SE") 

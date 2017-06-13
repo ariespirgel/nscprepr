@@ -1,13 +1,12 @@
 Package: nscprepr
 Type: Package
-Title: Prepares and writes files to submit to the National Student Clearinghouse
+Title: Prepares and Writes Files to Submit to the National Student Clearinghouse
 Version: 0.1.0
-Date: 2017-06-08
 Authors@R: person("Arie", "Spirgel", email = "spirgel@gmail.com",
   role = c("aut", "cre"))
-Maintainer: Arie Spirgel <spirgel@gmail.com>
+Date: 2017-06-08
 Description: Prepares and writes files to submit to the National Student Clearinghouse's 
-  StudentTracker service (http://www.studentclearinghouse.org/colleges/studenttracker/).
+  StudentTracker service <http://www.studentclearinghouse.org/colleges/studenttracker/>.
 Imports: dplyr,
     lubridate,
     stringr

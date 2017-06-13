@@ -34,3 +34,9 @@ Pls fix: for the first, pls ship the complete template.
 R CMD check results
 0 errors | 0 warnings | 0 notes
 
+# Round 3
+
+## Submission comments
+
+- Round two was accepted, but wanted to clean up nsc_prep.Rd
+

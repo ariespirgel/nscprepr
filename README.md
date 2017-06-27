@@ -1,8 +1,6 @@
-# nscprepr
+﻿# nscprepr
 
 This package contains one function - `nsc_prep()` - which prepares and writes a file that is ready for submission to the National Student Clearinghouse's StudentTracker service. 
-
-Begin with a data frame containing (at minimum) the columns in the example `df` below and executing the `nsc_prep()` function (substituting your institution's information and desired search type); the column names must be included (in any order) exactly as they are below (case sensitive). For more details on the columns (and what they mean) required by the StudentTracker service, please visit <http://www.studentclearinghouse.org/colleges/files/ST_ExcelInstructions.pdf>
 
 Begin by installing the package from CRAN:
 
@@ -10,6 +8,8 @@ Begin by installing the package from CRAN:
 install.packages("nscprepr")
 
 ```
+
+Store a data frame containing (at minimum) the columns in the example `df` below and executing the `nsc_prep()` function (substituting your institution's information and desired search type); the column names must be included (in any order) exactly as they are below (case sensitive). For more details on the columns (and what they mean) required by the StudentTracker service, please visit <http://www.studentclearinghouse.org/colleges/files/ST_ExcelInstructions.pdf>
 
 The chunk below creates an example data frame. Notice that it is OK to violate some Clearinghouse requirements in your data frame because `nsc_prep()` will eventually resolve the issues (e.g., single digit days can be one (e.g., `3`) or two (e.g., `03`) digits;  you can include the full middle name as opposed to just a single character for the middle initial).
 
